@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%)
+   
+}
+
+/*  container and column */
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 500px;
+    margin: 15% auto;
+    border-radius: 10px;
+    display: block;
+   
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#left-col {
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    float: left;
+    height: 450px;
+}
+
+#left-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#right-col {
+    float: right;
+    width: 50%;
+    padding: 20px;
+
+}
+
+/* styling for text*/
+#perfume {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#product-title {
+    line-height: 95%;
+    margin: 20px 0 20px;
+}
+
+#product-description {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#sale-price {
+color: hsl(158, 36%, 37%);
+display: inline-block;
+}
+
+#price-before{
+text-decoration: line-through;
+display: inline-block;
+position: relative;
+bottom: 5px;
+left: 10px;
+font-weight: 500;
+}
+
+/* button */
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0 10px;
+}
+
+.button img{
+    padding-right: 10px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+    height: 15px;
+}
+
+
+/* attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    bottom: 1;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* responsive */
+@media only screen and (max-width:375px) {
+    #right-col {
+        float: none;
+        width: 100%;
+    }
+
+    #left-col {
+        float: none;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: 250px;
+    }
+    .container {
+        margin: 20px;
+    }
+
+}
+
